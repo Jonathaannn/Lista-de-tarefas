@@ -32,9 +32,9 @@ function adclista(event){
 
 function verificador(event){
     const item = event.target
-
+    
     if (item.classList[0] === 'botao-excluir') {
-        const exclui = item.parentElement
+        let exclui = item.parentElement
         exclui.remove()
     }
     if(item.classList[0] === 'botao-completo'){
