@@ -11,32 +11,33 @@
 
 <body>
 
-    <header>
-        Lista de tarefas
-    </header>
+    <div id="container">
+        <header>
+            Lista de tarefas
+        </header>
 
-    <form>
-        <input type="text" class="adciona-item" id="adciona-item" />
-        <button class="adciona-botao" id="adciona-botao">
-            Adcionar +
-        </button>
+        <form>
+            <input type="text" class="adciona-item" id="adciona-item" />
+            <button class="adciona-botao" id="adciona-botao">
+                Adcionar +
+            </button>
 
-        <div class="seletor">
-            <select name="lista" class="filtro-lista">
-                <option value="all">Todas tarefas</option>
-                <option value="completed">Completas</option>
-                <option value="uncompleted">Incompletas</option>
-            </select>
+            <div class="seletor">
+                <select name="lista" class="filtro-lista">
+                    <option value="all">Todas tarefas</option>
+                    <option value="completed">Completas</option>
+                    <option value="uncompleted">Incompletas</option>
+                </select>
+            </div>
+        </form>
+
+        <div class="container-lista">
+            <ul class="lista-fazer" id="lista-fazer">
+
+            </ul>
         </div>
-    </form>
 
-    <div class="container-lista">
-        <ul class="lista-fazer" id="lista-fazer">
-
-        </ul>
-    </div>
-
-    <script src="script.js"></script>
+        <script src="script.js"></script>
 
 </body>
 

@@ -1,9 +1,11 @@
 const adcItem = document.querySelector('#adciona-item');
 const adcBotao = document.querySelector('#adciona-botao');
 const lstFazer = document.querySelector('#lista-fazer');
+const filtro = document.querySelector('.filro-lista')
 
 adcBotao.addEventListener('click', adclista)
 lstFazer.addEventListener('click', verificador)
+filtro.addEventListener('click', opcoes)
 
 function adclista(event){
     event.preventDefault()
@@ -39,6 +41,12 @@ function verificador(event){
     }
     if(item.classList[0] === 'botao-completo'){
         let completa = item.parentElement
-        completa.classList.toggle('lista2')
+        completa.classList.toggle('completo')
     }
+}
+
+function opcoes(event){
+    event.preventDefault()
+
+    let opcs = lista-lstFazer.childNodes
 }
